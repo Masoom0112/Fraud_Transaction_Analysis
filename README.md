@@ -3,4 +3,4 @@ This is a synthetic financial transactions dataset containing 6.36 million trans
 
 ## Dataset
 Due to file size constraints, the dataset is not included in this repository.
-Download it from Kaggle: [PaySim Synthetic Financial Dataset](https://www.kaggle.com/datasets/ealaxi/paysim1/data)
+Download it from Kaggle: [PaySim Synthetic Financial Dataset](https://www.kaggle.com/datasets/ealaxi/paysim1)
