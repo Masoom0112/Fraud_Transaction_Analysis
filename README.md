@@ -16,7 +16,7 @@ Download it from Kaggle: [PaySim Synthetic Financial Dataset](https://www.kaggle
 
 ## Bank-Churn-Analysis-Dashboard
 
-### Dashboard Link : 
+### Dashboard Link : https://github.com/Masoom0112/2nd-Project/blob/8731aa666171b8fac5b3c29c89fce289822ae381/Fraud_Detection_Dashboard.pdf
 
 ## Problem Statement
 
@@ -63,8 +63,10 @@ Analysis Performed :
            FROM dbo.fraud_transactions;
   
         * Code Snapshot :
+  ![1&2](Images/c-1&2.png)
   
-        * Output Snapshot :
+        * Output Snapshot : !
+  ![1&2](Images/o-1&2.png)
   
 
 - step 3: Transaction type distribution
@@ -82,8 +84,10 @@ Analysis Performed :
             order by fraud_rate_pct desc
   
          * Code Snapshot :
+  ![3&4](Images/c-3&4.png)
   
          * Output Snapshot :
+  ![3&4](Images/o-3&4.png)
   
 
 - step 5: Average transaction amount
@@ -100,8 +104,10 @@ Analysis Performed :
               ORDER BY Avg_Fraud_Amount desc,Avg_NonFraud_Amount desc
   
          * Code Snapshot :
+  ![5&6](Images/c-5&6.png)
   
          * Output Snapshot :
+  ![5&6](Images/o-5&6.png)
   
 
 - step 7: Amount-band analysis
@@ -122,8 +128,10 @@ Analysis Performed :
                               else 'very high' end) end) end )
   
          * Code Snapshot :
+  ![7](Images/c-7.png)
   
          * Output Snapshot :
+  ![7](Images/o-7.png)
   
 
 - step 8: Fraud flag analysis
@@ -143,8 +151,10 @@ Analysis Performed :
                 from fraud_transactions
   
          * Code Snapshot :
+![8](Images/c-8.png)
   
-         * Output Snapshot :
+         * Output Snapshot : 
+![8](Images/0-8.png)
   
 
 - step 9: Balance mismatch analysis
@@ -167,8 +177,10 @@ Analysis Performed :
              GROUP BY type
   
          * Code Snapshot :
+  ![9](Images/c-9.png)
   
          * Output Snapshot :
+  ![9](Images/o-9.png)
   
 
 
@@ -211,8 +223,10 @@ Analysis Performed :
                     print("F1 Score       :", f1)
   
          * Code Snapshot :
+  ![kpi](Images/c-p3.png)
   
          * Output Snapshot :
+  ![kpi](Images/o-p3.png)
 
 
 ## Phase 4: Feature Construction
@@ -228,6 +242,7 @@ Analysis Performed :
                           else:               return '0-10K'
   
          * Code Snapshot :
+  ![15](Images/c-15.png)
   
 - Step 16: Balance Mismatch Detection
 
@@ -236,6 +251,7 @@ Analysis Performed :
                df['mismatch'] = (df['oldbalanceOrg'] - df['amount']).round(2) != df['newbalanceOrig'].round(2)
   
          * Code Snapshot :
+  ![16](Images/c-16.png)
   
 ## Phase 5: Dashboard Design
 
@@ -300,7 +316,10 @@ Visuals:
                  plt.show()
 
        * Code Snapshot :
+  ![page-1](Images/c-page1.png)
+  
        * Page-1 Snapshot :
+  ![page-1](Images/o-page1.png)
 
 
 ### Page 2: Fraud Detection - Deep Dive
@@ -451,6 +470,7 @@ Visuals:
               plt.show(block=True)
 
        * Page-2 Snapshot :
+  ![page-2](Images/o-page2.png)
 
 
 ## Key Insights
