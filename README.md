@@ -474,7 +474,40 @@ Visuals:
 
 
 ## Key Insights
+
+- Out of 6,362,620 total transactions, only 8,213 transactions were identified as fraudulent, resulting in a fraud rate of just 0.13%.
+- Fraudulent activity is almost entirely limited to two transaction types:
+   - CASH_OUT: 50.1% of all fraud transactions
+   - TRANSFER: 49.9% of all fraud transactions
+- The average fraudulent transaction amount is approximately $1,467,967, compared to $178,197 for legitimate transactions. This indicates that fraudsters typically target high-value transactions, increasing the financial impact of each fraud event.
+- Transactions exceeding $1 million exhibit the highest fraud rate, making them significantly riskier than lower-value transactions.
+   -  0–10K: 0.02%
+   - 10K–100K: 0.06%
+   - 100K–1M: 0.14%
+   - ≥1M: 2.07%
+- Current fraud detection performance is weak because while flagged cases are highly accurate, the recall is extremely low indicating that the system is identifying only a very small portion of actual fraudulent transactions.
+   - Precision: 100%
+   - Recall: 0.19%
+   - F1 Score: 0.38%
+- The percentage of flagged fraud increases with transaction amount:
+   - 0–10K: 0.00%
+   - 10K–100K: 0.00%
+   - 100K–1M: 0.08%
+   - ≥1M: 0.48%
+
+This suggests that existing fraud controls are more focused on large transactions and may overlook fraud occurring in lower-value transactions.
+- Balance mismatches alone are not a reliable indicator of fraud and should be combined with other risk factors for effective detection.
+   - 80.56% of all transactions
+   - Only 0.55% of fraud transactions
+ 
+
 ## Recommendations
+
+- Since 100% of fraud cases originate from CASH_OUT and TRANSFER transactions, fraud prevention efforts should primarily focus on these transaction types.
+- Apply enhanced verification for transactions above $1 Million.
+- Future improvements should focus on increasing fraud detection coverage while maintaining acceptable accuracy levels.
+- Additional behavioral, transactional, and anomaly-based monitoring techniques should be incorporated to improve fraud detection performance.
+- The observed patterns in transaction type, amount bands, and fraud behavior provide a strong foundation for developing machine learning models capable of identifying suspicious transactions in real time.
 
 
 
