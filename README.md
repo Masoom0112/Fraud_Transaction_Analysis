@@ -1,4 +1,4 @@
-# 2nd-Project
+# Fraud Transaction Analysis
 This project analyzes a large-scale financial transaction dataset containing over 6.3 million transactions to identify fraud patterns, transaction anomalies, and high-risk transaction categories.
 
 The analysis was performed using:
